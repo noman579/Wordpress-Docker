@@ -1,16 +1,18 @@
-# WordPress and phpMyAdmin Setup with Docker Compose
 
-## Overview
+This command will start the services, and your WordPress site will be ready in no time.
 
-This setup allows you to quickly deploy WordPress along with phpMyAdmin using Docker Compose. WordPress will be available on port 8080 and phpMyAdmin will be accessible on port 8081. The MySQL database for WordPress is pre-configured with the following details:
+## Access Details
 
-- Database Name: wordpress
-- Database User: wordpressuser
-- Database Password: wordpresspassword
+- **WordPress:**
+- URL: `http://localhost:8080`
 
-## Instructions
+- **phpMyAdmin:**
+- URL: `http://localhost:8081`
+- Login using the following credentials:
+ - **Username:** wordpressuser
+ - **Password:** wordpresspassword
 
-1. **Clone the Repository**
-   ```sh
-   git clone <repository_url>
-   cd <repository_folder>
+## Notes
+
+- Ensure Docker and Docker Compose are installed on your system before running the setup.
+- For any modifications, edit the `docker-compose.yml` file as per your requirements.
